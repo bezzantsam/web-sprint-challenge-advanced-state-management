@@ -125,8 +125,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What problem does the context API help solve?
 
+Context API is a data management system. It alleviates the space and time complexity of prop drilling while storing data in a context object and directly feeding it to relevant components.
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
-3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
+Actions: Objects that encapsulate and transmit data from application to store to change state.
+
+Reducers: Functions that modify the state object with new data derived from state and action arguments as inputs. These are of course pure, predictable functions which is necessary in this paradigm.
+
+Store: is an object that keeps track of data/state
+
+3. What does `redux-thunk` allow us to do? How does it change our `action-creators`? Redux-thunk enables asynchronous actions within an otherwise synchronous system. Action-creators can be altered to return a function as opposed to an object. They both dynamically alter the ability of a program to interact with data.
 
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+Redux is brilliant. The syntax and learning curve aside having a central data store and separation of concerns really enables scaling and debugging not possible otherwise. However for a small scale application I like the functional React state management. There are other systems I have been exposed to outside of Bloomtech with even greater ability and ease of use. For now I think practicing Redux would be the most valuable system as it is relevant.
